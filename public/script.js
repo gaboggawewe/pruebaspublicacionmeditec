@@ -14,6 +14,6 @@ function sendMail() {
         })
         .catch((error) => {
             console.error("Error al enviar el mensaje:", error);
-            alert("Error al enviar el mensaje. Por favor, verifica los datos.");
+            alert("Error al enviar el mensaje. Por favor, da refresh a la página y verifica los datos.");
         });
 }

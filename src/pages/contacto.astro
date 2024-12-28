@@ -6,14 +6,38 @@ import { Image } from "astro:assets";
 import { getEntryBySlug } from "astro:content";
 
 const entry = await getEntryBySlug("contacto", "index");
+
+console.log("Entry:", entry);
+
+if (!entry) {
+  throw new Error("Entry not found");
+}
+
 const { contact_form_action } = config.params;
-const contact = entry.data;
+const contact = entry.data || entry; // Adjust this line based on the structure of your entry
+
+console.log("Contact:", contact);
+
+if (!contact) {
+  throw new Error("Contact data not found");
+}
+
 const page_data = {
   ...contact,
   content: contact.body,
 };
 ---
-
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "loI_VEtIPU1uAksu0",
+      });
+   })();
+</script>
+<script src="/script.js" is:inline></script>
 <Base
   title={contact.title}
   meta_title={contact.meta_title}
@@ -60,7 +84,7 @@ const page_data = {
               />
             </div>
             <div class="form-group mb-5">
-              <label class="form-label" for="eamil">Correo Electrónico</label>
+              <label class="form-label" for="email">Correo Electrónico</label>
               <input
                 class="form-control"
                 type="text"
@@ -87,7 +111,7 @@ const page_data = {
             </div>
             <input
               class="btn btn-primary block w-full"
-              type="submit"
+              type="button" onclick="sendMail()"
               value="Enviar Mensaje"
             />
           </form>

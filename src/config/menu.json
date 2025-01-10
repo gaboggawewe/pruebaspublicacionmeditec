@@ -17,6 +17,10 @@
       "url": "/quienes-somos"
     },
     {
+      "name": "Testimonios",
+      "url": "/testimonios"
+    },
+    {
       "name": "Agenda",
       "url": "/agenda"
     }
@@ -44,6 +48,10 @@
     {
       "name": "Quiénes somos",
       "url": "/quienes-somos"
+    },
+    {
+      "name": "Testimonios",
+      "url": "/testimonios"
     },
     {
       "name": "Agenda",

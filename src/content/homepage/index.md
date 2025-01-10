@@ -122,5 +122,5 @@ testimonial:
       avatar: "/images/users/user-5.png"
       organization: meta limited
       rating: five
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
+      content: Our platform helps build secure onboarding authentica experiences & engage your users. We buildd .
 ---

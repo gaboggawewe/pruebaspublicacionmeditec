@@ -6,9 +6,12 @@ import OurMembers from "@/components/quienes-somos/OurMembers.astro";
 import Base from "@/layouts/Base.astro";
 import Cta from "@/layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
+import TestimonialSlider from "@/layouts/function-components/TestimonialSlider2";
 
 const quienesSomos = await getEntryBySlug("quienes-somos", "index");
 const {members } = quienesSomos.data;
+const { testimonial } = quienesSomos.data;
+
 ---
 
 <Base
@@ -24,6 +27,20 @@ const {members } = quienesSomos.data;
       <OurMembers members={members} />
     </div>
   </section>
-  <ProjecManagement features={quienesSomos.data} />
+  <section class="reviews">
+    <div class="container">
+      <div class="row justify-center text-center">
+        <div class="lg:col-8">
+          <h2>{testimonial.title}</h2>
+          <p class="mt-4">{testimonial.description}</p>
+        </div>
+      </div>
+      <div class="row mt-10">
+        <div class="col-12">
+          <TestimonialSlider list={testimonial.testimonial_list} client:load />
+        </div>
+      </div>
+    </div>
+  </section>
 
 </Base>

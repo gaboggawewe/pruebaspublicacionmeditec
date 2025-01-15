@@ -1,0 +1,226 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/404/",
+			"headers": {
+				"Location": "/404"
+			},
+			"status": 308
+		},
+		{
+			"src": "/agenda/",
+			"headers": {
+				"Location": "/agenda"
+			},
+			"status": 308
+		},
+		{
+			"src": "/blog/page/([^/]+?)/",
+			"headers": {
+				"Location": "/blog/page/$1"
+			},
+			"status": 308
+		},
+		{
+			"src": "/blog/([^/]+?)/",
+			"headers": {
+				"Location": "/blog/$1"
+			},
+			"status": 308
+		},
+		{
+			"src": "/blog/",
+			"headers": {
+				"Location": "/blog"
+			},
+			"status": 308
+		},
+		{
+			"src": "/career/([^/]+?)/",
+			"headers": {
+				"Location": "/career/$1"
+			},
+			"status": 308
+		},
+		{
+			"src": "/career/",
+			"headers": {
+				"Location": "/career"
+			},
+			"status": 308
+		},
+		{
+			"src": "/categories/([^/]+?)/",
+			"headers": {
+				"Location": "/categories/$1"
+			},
+			"status": 308
+		},
+		{
+			"src": "/categories/",
+			"headers": {
+				"Location": "/categories"
+			},
+			"status": 308
+		},
+		{
+			"src": "/contacto/",
+			"headers": {
+				"Location": "/contacto"
+			},
+			"status": 308
+		},
+		{
+			"src": "/impacto/",
+			"headers": {
+				"Location": "/impacto"
+			},
+			"status": 308
+		},
+		{
+			"src": "/patrocinadores/([^/]+?)/",
+			"headers": {
+				"Location": "/patrocinadores/$1"
+			},
+			"status": 308
+		},
+		{
+			"src": "/patrocinadores/",
+			"headers": {
+				"Location": "/patrocinadores"
+			},
+			"status": 308
+		},
+		{
+			"src": "/pricing/",
+			"headers": {
+				"Location": "/pricing"
+			},
+			"status": 308
+		},
+		{
+			"src": "/quienes-somos/",
+			"headers": {
+				"Location": "/quienes-somos"
+			},
+			"status": 308
+		},
+		{
+			"src": "/signin/",
+			"headers": {
+				"Location": "/signin"
+			},
+			"status": 308
+		},
+		{
+			"src": "/signup/",
+			"headers": {
+				"Location": "/signup"
+			},
+			"status": 308
+		},
+		{
+			"src": "/([^/]+?)/",
+			"headers": {
+				"Location": "/$1"
+			},
+			"status": 308
+		},
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^\\/_image$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/404$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/agenda$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/blog\\/page\\/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/blog\\/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/blog$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/career\\/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/career$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/categories\\/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/categories$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/contacto$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/impacto$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/patrocinadores\\/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/patrocinadores$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/pricing$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/quienes-somos$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/signin$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/signup$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/$",
+			"dest": "_render"
+		},
+		{
+			"src": "/.*",
+			"dest": "_render",
+			"status": 404
+		}
+	]
+}

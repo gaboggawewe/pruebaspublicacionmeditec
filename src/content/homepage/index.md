@@ -67,7 +67,7 @@ service:
       description: La ambición y el reto de MEDITEC movilizan a todos los miembros del grupo estudiantil, estimulando su pasión por marcar una diferencia real en la vida de las personas y en el ámbito de la salud comunitaria.
       video:
         thumbnail: "/images/DSC_0319.JPG"
-        video_id: "g3-VxLQO7do"
+        video_id: "c9YilzGSrQE"
       button:
         label: Conoce más
         link: "quienes-somos"

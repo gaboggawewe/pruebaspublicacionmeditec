@@ -101,4 +101,38 @@ project_management:
       - title: Transaction from Anyone with <br /> a world to Anywhere
         content: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
         image: "/images/features/feature-img-2.png"
+
+testimonial:
+  title: Stands
+  description: 
+  testimonial_list:
+    - author: Biociencias
+      avatar: "/images/logos/biociencias-modified.png"
+      content: "Neuropsicología  \nPruebas de ansiedad  \nDepresión  \nRevisión de pares craneales  \nFunciones neurocognitivas"
+
+
+
+    - author: Nutrición
+      avatar: "/images/logos/nutricion-modified.png"
+      content: "Actividad física  \nAntropometría y Asesoría Nutricional  \nDiabetes y Dislipidemias  \nSnacks Saludables"
+
+    - author: Medicina
+      avatar: "/images/logos/medicina-modified.png"
+      content: "Dermatología  \nOftalmología  \nGastroenterología  \nEndocrinología  \nCardiología  \nNeurología  \nHistoria Clínica  \nNefrología  \nNeumología  \nOtorrinolaringología  \nTraumatología  \nOrtopedia."
+      
+    - author: Psicología
+      avatar: "/images/logos/psicologia-modified.png"
+      content: "Psicología Integral  \nTanatología
+"
+
+    - author: Multidisciplinario
+      avatar: "/images/logos/multidisciplinarios-modified.png"
+      content: "Geriatría  \nPrimeros Auxilios  \nPediatría  \nGinecología y Obstetricia  \nSalud Sexual  \nOsteoporosis.
+"
+
+    - author: IBT & IMD
+      avatar: "/images/logos/ibtimd-modified.png"
+      content: "Biomarcadores  \nSimulación Médica."
+
+    
 ---

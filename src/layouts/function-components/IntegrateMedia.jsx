@@ -8,6 +8,9 @@ const IntegrateMedia = ({ integrations, categories }) => {
   const filterPost = !tab
     ? integrations
     : integrations.filter((post) => post.data.categories.includes(tab));
+
+    const hasIncompleteLastRow = filterPost.length % 3 === 2;
+
   return (
     <section className="section pt-0">
       <div className="container">
@@ -15,11 +18,15 @@ const IntegrateMedia = ({ integrations, categories }) => {
           <div className="lg:col-10">
           </div>
         </div>
-        <div className="integration-tab-items row mt-10">
+        <div className="integration-tab-items row mt-4">
           {filterPost.map((item, i) => (
             <div
               key={i}
-              className="integration-tab-item mb-8 md:col-6 lg:col-4"
+              className={`integration-tab-item mb-8 md:col-6 lg:col-4 ${
+                hasIncompleteLastRow && i >= filterPost.length - 2
+                  ? "lg:col-4 lg:translate-x-1/2"
+                  : ""
+              }`}
             >
               <div className="rounded-xl bg-white px-10 pb-8 pt-11 shadow-lg">
                 <div className="integration-card-head flex items-center space-x-4">

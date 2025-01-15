@@ -11,12 +11,10 @@ const { testimonial } = homepage.data;
 <Base title={testimonial.title}>
   <section class="reviews">
     <div class="container">
-      <div class="row justify-between">
-        <div class="lg:col-6">
+      <div class="row justify-center text-center">
+        <div class="lg:col-8">
           <h2>{testimonial.title}</h2>
-        </div>
-        <div class="lg:col-4">
-          <p>{testimonial.description}</p>
+          <p class="mt-4">{testimonial.description}</p>
         </div>
       </div>
       <div class="row mt-10">

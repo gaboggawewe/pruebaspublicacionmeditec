@@ -108,7 +108,7 @@ testimonial:
   testimonial_list:
     - author: Biociencias
       avatar: "/images/logos/biociencias-modified.png"
-      content: "Neuropsicología  \nPruebas de ansiedad  \nDepresión  \nRevisión de pares craneales  \nFunciones neurocognitivas"
+      content: "Alergología  \nMicrobiología  \nPruebas sanguíneas  \nVacunación"
     - author: Nutrición
       avatar: "/images/logos/nutricion-modified.png"
       content: "Actividad física  \nAntropometría y Asesoría Nutricional  \nDiabetes y Dislipidemias  \nSnacks Saludables"

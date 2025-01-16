@@ -1,0 +1,41 @@
+---
+const { content, title, description } = Astro.props;
+import { marked } from "marked";
+
+marked.setOptions({
+  breaks: true,
+  gfm: true
+});
+---
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-center text-center mb-8">
+      <div class="lg:col-8">
+        <h2 class="h3 mb-4">{title}</h2>
+        <p class="text-lg">{description}</p>
+      </div>
+    </div>
+    <div class="content prose prose-lg mx-auto">
+      <div class="markdown-content" set:html={marked.parse(content)} />
+    </div>
+  </div>
+</section>
+
+<style>
+  .markdown-content :global(p) {
+    margin-bottom: 1.5rem;
+  }
+  .markdown-content :global(strong) {
+    font-weight: bold;
+  }
+  .markdown-content :global(h3) {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .markdown-content :global(ul) {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+</style>

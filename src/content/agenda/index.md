@@ -36,4 +36,4 @@ our_works:
       - Customer Service with 79 languages
 ---
 Ven este viernes 15 y sábado 16 de agosto a la explanada exterior del Tec de Monterrey Campus Ciudad de México, para recibir asesoría médica, psicológica y nutricional totalmente GRATUITA. <br/> 
-Además, podrás encontrar estudios de laboratorio, elastografias, espirometrias, electrocardiogramas y mucho más.
+Además, podrás encontrar estudios de laboratorio, elastografías, espirometrías, electrocardiogramas y mucho más.

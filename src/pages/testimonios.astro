@@ -1,11 +1,13 @@
 ---
-// filepath: /c:/Users/gabog/OneDrive/TEC/TEC/carrera/tercer semestre/PAGINA MEDITEC/Meditec/src/pages/testimonios.astro
 import Base from "@/layouts/Base.astro";
 import TestimonialSlider from "@/layouts/function-components/TestimonialSlider";
+import TextSection from "@/layouts/components/TextSection.astro";
 import { getEntryBySlug } from "astro:content";
 
 const homepage = await getEntryBySlug("homepage", "index");
+const testimonios = await getEntryBySlug("testimonios", "index");
 const { testimonial } = homepage.data;
+const { Content } = testimonios.render();
 ---
 
 <Base title={testimonial.title}>
@@ -24,4 +26,10 @@ const { testimonial } = homepage.data;
       </div>
     </div>
   </section>
+
+  <TextSection 
+    content={testimonios.body}
+    title={testimonios.data.title}
+    description={testimonios.data.description}
+  />
 </Base>

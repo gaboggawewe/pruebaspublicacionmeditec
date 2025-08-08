@@ -77,7 +77,7 @@ service:
 #testimonial, ubicado en testimonios, no en homepage.
 testimonial:
   title: Testimonios
-  description: 
+  description: ""
   testimonial_list:
     - author: Paulina Escobedo Velázquez
       avatar: "/images/users/paulina-escobedo.png"

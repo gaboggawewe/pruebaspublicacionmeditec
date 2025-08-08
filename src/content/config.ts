@@ -28,6 +28,60 @@ const pagesCollection = defineCollection({
   }),
 });
 
+// Homepage collection schema
+const homepageCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    banner: z.object({
+      title: z.string(),
+      content: z.string(),
+      image: z.string(),
+      button: z.object({
+        label: z.string(),
+        link: z.string(),
+        enable: z.boolean(),
+      }),
+    }).optional(),
+    key_features: z.object({
+      title: z.string(),
+      description: z.string(),
+      feature_list: z.array(z.any()),
+    }).optional(),
+    service: z.object({
+      homepage_tab: z.any().optional(),
+      our_service: z.array(z.any()),
+    }).optional(),
+    testimonial: z.object({
+      title: z.string(),
+      description: z.string().nullable().optional(),
+      testimonial_list: z.array(z.any()),
+    }).optional(),
+  }),
+});
+
+// Impacto collection schema - more flexible
+const impactoCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    page_title: z.string().optional(),
+    counter: z.any().optional(),
+    gallery: z.any().optional(),
+    features: z.any().optional(),
+    members: z.any().optional(),
+  }),
+});
+
+// Quienes Somos collection schema - more flexible
+const quienesSomosCollection = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    banner: z.any().optional(),
+    members: z.any().optional(), 
+    project_management: z.any().optional(),
+    testimonial: z.any().optional(),
+  }),
+});
+
 // Integrations collection schema
 const integrationsCollection = defineCollection({
   schema: z.object({
@@ -51,9 +105,9 @@ export const collections = {
   agenda: pagesCollection,
   careers: pagesCollection,
   contacto: pagesCollection,
-  homepage: pagesCollection,
-  impacto: pagesCollection,
+  homepage: homepageCollection,
+  impacto: impactoCollection,
   pricing: pagesCollection,
-  "quienes-somos": pagesCollection,
+  "quienes-somos": quienesSomosCollection,
   testimonios: pagesCollection,
 };

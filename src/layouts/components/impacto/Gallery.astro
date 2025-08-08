@@ -1,7 +1,7 @@
 ---
 import { markdownify } from "@/lib/utils/textConverter";
 const { gallery } = Astro.props;
-const { title, images } = gallery;
+const { title, images } = gallery || {};
 ---
 
 <section class="section">
@@ -15,7 +15,7 @@ const { title, images } = gallery;
     <div class="relative">
       <div class="row" id="photo-gallery">
         {
-          images.map((image: any) => (
+          images?.map((image: any) => (
             <div class="picture-item col-6 mt-12">
               {" "}
               <img class="w-full" src={image} alt="" />

@@ -104,7 +104,7 @@ project_management:
 
 testimonial:
   title: Stands
-  description: 
+  description: ""
   testimonial_list:
     - author: Biociencias
       avatar: "/images/logos/biociencias-modified.png"

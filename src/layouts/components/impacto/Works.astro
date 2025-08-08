@@ -1,8 +1,7 @@
 ---
 import { Image } from "astro:assets";
-const {
-  features: { title, button, features_list },
-} = Astro.props;
+const { features } = Astro.props;
+const { title, button, features_list } = features || {};
 ---
 
 <section class="section">

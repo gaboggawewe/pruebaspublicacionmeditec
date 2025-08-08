@@ -1,4 +1,5 @@
 ---
+title: ""
 banner:
   title: "Misión"
   content: "Buscamos posicionarnos como un referente en la atención comunitaria en salud, brindando acceso a servicios médicos de calidad y promoviendo el bienestar integral de la población. Aspiramos a ser un evento que transforma vidas, donde la salud se perciba como un derecho accesible para todos."

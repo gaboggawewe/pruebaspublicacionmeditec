@@ -19,9 +19,9 @@ export async function getStaticPaths() {
 }
 
 const { page } = Astro.props;
-const { title, meta_title, description, image } = page.data;
+const { title, meta_title, description, image } = page?.data || {};
 const page_data = {
-  ...page.data,
+  ...page?.data,
 };
 ---
 

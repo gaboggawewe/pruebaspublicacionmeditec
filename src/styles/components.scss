@@ -710,3 +710,10 @@ select:invalid {
     width: 100% !important;
   }
 }
+
+// integration card styles
+.integration-card-head {
+  img {
+    @apply h-20 w-20 object-contain flex-shrink-0;
+  }
+}

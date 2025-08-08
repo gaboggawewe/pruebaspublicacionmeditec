@@ -8,6 +8,14 @@ import { getTaxonomy } from "@/lib/taxonomyParser.astro";
 import type { TIntegrationsIndex } from "@/types";
 import { getEntryBySlug } from "astro:content";
 
+// Fetch patrocinadores nuevos data (Hero section)
+const patronNuevosIndex = (await getEntryBySlug<any, string>(
+  "patrocinadores-nuevos",
+  "-index",
+)) as TIntegrationsIndex;
+const patronNuevosCategories = await getTaxonomy("patrocinadores-nuevos", "categories");
+const patrocinadoresNuevos = await getSinglePage("patrocinadores-nuevos");
+
 // Fetch patrocinadores data
 const patronIndex = (await getEntryBySlug<any, string>(
   "patrocinadores",
@@ -24,6 +32,11 @@ const collabIndex = (await getEntryBySlug<any, string>(
 const collabCategories = await getTaxonomy("colaboradores", "categories");
 const colaboradores = await getSinglePage("colaboradores");
 
+const patron_nuevos_data = {
+  ...patronNuevosIndex.data,
+  content: patronNuevosIndex.body,
+};
+
 const page_data = {
   ...patronIndex.data,
   content: patronIndex.body,
@@ -36,19 +49,33 @@ const collab_data = {
 ---
 
 <Base
-  title={patronIndex.data.title}
-  meta_title={patronIndex.data.meta_title}
-  description={patronIndex.data.description}
-  image={patronIndex.data.image}
+  title={patronNuevosIndex.data.title}
+  meta_title={patronNuevosIndex.data.meta_title}
+  description={patronNuevosIndex.data.description}
+  image={patronNuevosIndex.data.image}
 >
   <Shape />
   <section class="page-hero pb-14 pt-16">
     <div class="container -mt-14">
+      <PageHeader page_data={patron_nuevos_data} />
+    </div>
+  </section>
+
+  {/* Nuevos Patrocinadores section (Hero) */}
+  <IntegrateMedia
+    client:load
+    integrations={patrocinadoresNuevos}
+    categories={patronNuevosCategories}
+  />
+
+  {/* Patrocinadores title section */}
+  <section class="page-hero pb-14 pt-16">
+    <div class="container">
       <PageHeader page_data={page_data} />
     </div>
   </section>
 
-  {/* Patrocinadores section */}
+  {/* Patrocinadores Anteriores section */}
   <IntegrateMedia
     client:load
     integrations={patrocinadores}

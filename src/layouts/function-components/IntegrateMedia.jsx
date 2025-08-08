@@ -28,7 +28,7 @@ const IntegrateMedia = ({ integrations, categories }) => {
                   : ""
               }`}
             >
-              <div className="rounded-xl bg-white px-10 pb-8 pt-11 shadow-lg">
+              <div className="rounded-xl bg-white px-10 pb-8 pt-11 shadow-lg h-full flex flex-col">
                 <div className="integration-card-head flex items-center space-x-4">
                   <img src={item.data.image} alt="" />
                   <div>
@@ -40,7 +40,7 @@ const IntegrateMedia = ({ integrations, categories }) => {
                     ))}
                   </div>
                 </div>
-                <div className="my-5 border-y border-border py-5">
+                <div className="my-5 border-y border-border py-5 flex-grow">
                   <p
                     dangerouslySetInnerHTML={{
                       __html: marked.parseInline(

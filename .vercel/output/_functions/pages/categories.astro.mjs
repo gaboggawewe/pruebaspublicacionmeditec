@@ -6,8 +6,8 @@ import { $ as $$PageHeader } from '../chunks/PageHeader_B1uRuW9C.mjs';
 import { $ as $$Shape } from '../chunks/Shape_BsNlbRA4.mjs';
 import { $ as $$BlogCategories } from '../chunks/BlogCategories_0nmQLDep.mjs';
 import { c as config, $ as $$Base } from '../chunks/Base_BO0XG6xc.mjs';
-import { g as getSinglePage } from '../chunks/contentParser_5ovzcg5V.mjs';
-import { g as getTaxonomy } from '../chunks/taxonomyParser_CGcbBwlH.mjs';
+import { g as getSinglePage } from '../chunks/contentParser_OfUWdbO7.mjs';
+import { g as getTaxonomy } from '../chunks/taxonomyParser_DOzMDsFv.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {

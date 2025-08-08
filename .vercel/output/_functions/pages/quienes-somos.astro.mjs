@@ -5,7 +5,7 @@ import { $ as $$Shape } from '../chunks/Shape_BsNlbRA4.mjs';
 import '../chunks/index_CvbikOoI.mjs';
 import { $ as $$Image } from '../chunks/_astro_assets_ByzmE2sD.mjs';
 import { $ as $$Base } from '../chunks/Base_BO0XG6xc.mjs';
-import { g as getEntryBySlug } from '../chunks/_astro_content_DzRQikgI.mjs';
+import { g as getEntryBySlug } from '../chunks/_astro_content_iYN5TcHd.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState, useRef } from 'react';
 import SwiperCore from 'swiper';

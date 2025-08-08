@@ -10,7 +10,7 @@ import { useState } from 'react';
 import { Play } from 'react-feather';
 import YouTube from 'react-youtube';
 import { AiFillCheckCircle } from 'react-icons/ai';
-import { g as getEntryBySlug } from '../chunks/_astro_content_DzRQikgI.mjs';
+import { g as getEntryBySlug } from '../chunks/_astro_content_iYN5TcHd.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro$1 = createAstro("https://pinwheel-astro.vercel.app");

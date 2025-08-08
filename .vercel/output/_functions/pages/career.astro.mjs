@@ -5,7 +5,7 @@ import { $ as $$PageHeader } from '../chunks/PageHeader_B1uRuW9C.mjs';
 import { $ as $$Shape } from '../chunks/Shape_BsNlbRA4.mjs';
 import { h as humanize, $ as $$Base } from '../chunks/Base_BO0XG6xc.mjs';
 import { $ as $$Cta } from '../chunks/Cta_Gtu-bxGE.mjs';
-import { g as getEntryBySlug } from '../chunks/_astro_content_DzRQikgI.mjs';
+import { g as getEntryBySlug } from '../chunks/_astro_content_iYN5TcHd.mjs';
 import '../chunks/index_CvbikOoI.mjs';
 import { $ as $$Image } from '../chunks/_astro_assets_ByzmE2sD.mjs';
 import { jsx, jsxs } from 'react/jsx-runtime';
@@ -13,8 +13,8 @@ import * as Icon from 'react-feather';
 import { useState } from 'react';
 import { marked } from 'marked';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import { g as getSinglePage } from '../chunks/contentParser_5ovzcg5V.mjs';
-import { g as getTaxonomy } from '../chunks/taxonomyParser_CGcbBwlH.mjs';
+import { g as getSinglePage } from '../chunks/contentParser_OfUWdbO7.mjs';
+import { g as getTaxonomy } from '../chunks/taxonomyParser_DOzMDsFv.mjs';
 export { renderers } from '../renderers.mjs';
 
 const CareerBenifits = ({ benifits: { title, description, benifit_list } }) => {

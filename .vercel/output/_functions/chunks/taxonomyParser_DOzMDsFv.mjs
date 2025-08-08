@@ -1,7 +1,7 @@
 import { c as createComponent, a as renderTemplate } from './astro/server_CcPgtZJR.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { g as getSinglePage } from './contentParser_5ovzcg5V.mjs';
+import { g as getSinglePage } from './contentParser_OfUWdbO7.mjs';
 
 const getTaxonomy = async (collection, name) => {
   const singlePages = await getSinglePage(collection);

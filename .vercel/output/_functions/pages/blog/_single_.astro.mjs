@@ -9,7 +9,7 @@ import 'react';
 import { FaRegUserCircle, FaRegCalendarAlt, FaRegClock, FaRegFolder } from 'react-icons/fa';
 import '../../chunks/index_CvbikOoI.mjs';
 import { $ as $$Image } from '../../chunks/_astro_assets_ByzmE2sD.mjs';
-import { g as getSinglePage } from '../../chunks/contentParser_5ovzcg5V.mjs';
+import { g as getSinglePage } from '../../chunks/contentParser_OfUWdbO7.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const Disqus = () => {

@@ -5,8 +5,8 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import { $ as $$PageHeader } from '../../chunks/PageHeader_B1uRuW9C.mjs';
 import { $ as $$Shape } from '../../chunks/Shape_BsNlbRA4.mjs';
 import { $ as $$Base } from '../../chunks/Base_BO0XG6xc.mjs';
-import { g as getSinglePage } from '../../chunks/contentParser_5ovzcg5V.mjs';
-import { g as getEntryBySlug } from '../../chunks/_astro_content_DzRQikgI.mjs';
+import { g as getSinglePage } from '../../chunks/contentParser_OfUWdbO7.mjs';
+import { g as getEntryBySlug } from '../../chunks/_astro_content_iYN5TcHd.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Astro$1 = createAstro("https://pinwheel-astro.vercel.app");

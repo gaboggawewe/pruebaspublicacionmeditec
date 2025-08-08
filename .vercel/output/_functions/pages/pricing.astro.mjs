@@ -9,7 +9,7 @@ import { marked } from 'marked';
 import { useState } from 'react';
 import { BsPinAngleFill } from 'react-icons/bs';
 import * as Icon from 'react-feather';
-import { g as getEntryBySlug } from '../chunks/_astro_content_DzRQikgI.mjs';
+import { g as getEntryBySlug } from '../chunks/_astro_content_iYN5TcHd.mjs';
 export { renderers } from '../renderers.mjs';
 
 const Faq = ({ data }) => {

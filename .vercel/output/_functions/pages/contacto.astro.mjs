@@ -5,7 +5,7 @@ import { $ as $$PageHeader } from '../chunks/PageHeader_B1uRuW9C.mjs';
 import { $ as $$Base, c as config } from '../chunks/Base_BO0XG6xc.mjs';
 import '../chunks/index_CvbikOoI.mjs';
 import { $ as $$Image } from '../chunks/_astro_assets_ByzmE2sD.mjs';
-import { g as getEntryBySlug } from '../chunks/_astro_content_DzRQikgI.mjs';
+import { g as getEntryBySlug } from '../chunks/_astro_content_iYN5TcHd.mjs';
 export { renderers } from '../renderers.mjs';
 
 var __freeze = Object.freeze;

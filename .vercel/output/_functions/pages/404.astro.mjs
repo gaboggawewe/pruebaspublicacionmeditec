@@ -4,7 +4,7 @@ import 'kleur/colors';
 import { $ as $$Base, m as markdownify } from '../chunks/Base_BO0XG6xc.mjs';
 import '../chunks/index_CvbikOoI.mjs';
 import { $ as $$Image } from '../chunks/_astro_assets_ByzmE2sD.mjs';
-import { g as getEntryBySlug } from '../chunks/_astro_content_DzRQikgI.mjs';
+import { g as getEntryBySlug } from '../chunks/_astro_content_iYN5TcHd.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$404 = createComponent(async ($$result, $$props, $$slots) => {

@@ -8,9 +8,9 @@ import { jsx, jsxs } from 'react/jsx-runtime';
 import { useState } from 'react';
 import { marked } from 'marked';
 import { AiOutlineArrowRight } from 'react-icons/ai';
-import { g as getSinglePage } from '../chunks/contentParser_5ovzcg5V.mjs';
-import { g as getTaxonomy } from '../chunks/taxonomyParser_CGcbBwlH.mjs';
-import { g as getEntryBySlug } from '../chunks/_astro_content_DzRQikgI.mjs';
+import { g as getSinglePage } from '../chunks/contentParser_OfUWdbO7.mjs';
+import { g as getTaxonomy } from '../chunks/taxonomyParser_DOzMDsFv.mjs';
+import { g as getEntryBySlug } from '../chunks/_astro_content_iYN5TcHd.mjs';
 export { renderers } from '../renderers.mjs';
 
 const IntegrateMedia = ({ integrations, categories }) => {

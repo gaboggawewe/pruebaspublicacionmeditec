@@ -1,7 +1,7 @@
 import { c as createComponent, a as renderTemplate } from './astro/server_CcPgtZJR.mjs';
 import 'kleur/colors';
 import 'clsx';
-import { a as getCollection } from './_astro_content_DzRQikgI.mjs';
+import { a as getCollection } from './_astro_content_iYN5TcHd.mjs';
 
 const getSinglePage = async (collection) => {
   const allPage = await getCollection(collection);

@@ -12,7 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'clsx';
 import { marked } from 'marked';
 /* empty css                                       */
-import { g as getEntryBySlug } from '../chunks/_astro_content_DzRQikgI.mjs';
+import { g as getEntryBySlug } from '../chunks/_astro_content_iYN5TcHd.mjs';
 export { renderers } from '../renderers.mjs';
 
 const TestimonialSlider = ({ list }) => {

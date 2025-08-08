@@ -4,7 +4,7 @@ import 'kleur/colors';
 import { $ as $$PageHeader } from '../chunks/PageHeader_B1uRuW9C.mjs';
 import { $ as $$Shape } from '../chunks/Shape_BsNlbRA4.mjs';
 import { $ as $$Base } from '../chunks/Base_BO0XG6xc.mjs';
-import { g as getSinglePage } from '../chunks/contentParser_5ovzcg5V.mjs';
+import { g as getSinglePage } from '../chunks/contentParser_OfUWdbO7.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro$1 = createAstro("https://pinwheel-astro.vercel.app");

@@ -6,8 +6,8 @@ import { $ as $$Image } from '../../chunks/_astro_assets_ByzmE2sD.mjs';
 import { $ as $$PageHeader } from '../../chunks/PageHeader_B1uRuW9C.mjs';
 import { $ as $$Shape } from '../../chunks/Shape_BsNlbRA4.mjs';
 import { $ as $$Base, h as humanize, m as markdownify } from '../../chunks/Base_BO0XG6xc.mjs';
-import { g as getSinglePage } from '../../chunks/contentParser_5ovzcg5V.mjs';
-import { g as getEntryBySlug } from '../../chunks/_astro_content_DzRQikgI.mjs';
+import { g as getSinglePage } from '../../chunks/contentParser_OfUWdbO7.mjs';
+import { g as getEntryBySlug } from '../../chunks/_astro_content_iYN5TcHd.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Astro = createAstro("https://pinwheel-astro.vercel.app");

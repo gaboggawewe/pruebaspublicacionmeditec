@@ -5,7 +5,7 @@ import { $ as $$PageHeader } from '../chunks/PageHeader_B1uRuW9C.mjs';
 import { $ as $$Shape } from '../chunks/Shape_BsNlbRA4.mjs';
 import 'clsx';
 import { m as markdownify, $ as $$Base } from '../chunks/Base_BO0XG6xc.mjs';
-import { g as getEntryBySlug } from '../chunks/_astro_content_DzRQikgI.mjs';
+import { g as getEntryBySlug } from '../chunks/_astro_content_iYN5TcHd.mjs';
 export { renderers } from '../renderers.mjs';
 
 var __freeze = Object.freeze;

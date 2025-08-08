@@ -6,8 +6,8 @@ import { $ as $$Blogs } from '../../chunks/Blogs_ChV7munz.mjs';
 import { $ as $$PageHeader } from '../../chunks/PageHeader_B1uRuW9C.mjs';
 import { $ as $$Shape } from '../../chunks/Shape_BsNlbRA4.mjs';
 import { s as slugify, c as config, $ as $$Base, h as humanize } from '../../chunks/Base_BO0XG6xc.mjs';
-import { g as getSinglePage } from '../../chunks/contentParser_5ovzcg5V.mjs';
-import { g as getTaxonomy } from '../../chunks/taxonomyParser_CGcbBwlH.mjs';
+import { g as getSinglePage } from '../../chunks/contentParser_OfUWdbO7.mjs';
+import { g as getTaxonomy } from '../../chunks/taxonomyParser_DOzMDsFv.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const taxonomyFilter = (posts, name, key) => posts.filter(
